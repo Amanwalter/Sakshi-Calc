@@ -180,7 +180,7 @@
             const [selectedCategory, setSelectedCategory] = useState(""); 
             const [selectedForm, setSelectedForm] = useState(""); 
             
-            const [sheetUrl, setSheetUrl] = useState("https://docs.google.com/spreadsheets/d/1rSEURvwQMAsTKuf7DOvBPSs0d0dnhuMo6GwggadfoyE/edit?usp=sharing");
+            const [sheetUrl, setSheetUrl] = useState("https://docs.google.com/spreadsheets/d/1sw86guXqSdTAFapE7dDf2NvvbdeFIiLdjpuBnkl4YKw/edit?usp=sharing");
             const [isLoading, setIsLoading] = useState(false);
             const [lastSync, setLastSync] = useState(null);
 
@@ -248,7 +248,7 @@
                 const savedSync = localStorage.getItem('apiCalcLastSync');
                 
                 // Use saved URL or default to the embedded Google Sheet
-                const urlToUse = savedUrl || "https://docs.google.com/spreadsheets/d/1rSEURvwQMAsTKuf7DOvBPSs0d0dnhuMo6GwggadfoyE/edit?usp=sharing";
+                const urlToUse = savedUrl || "https://docs.google.com/spreadsheets/d/1sw86guXqSdTAFapE7dDf2NvvbdeFIiLdjpuBnkl4YKw/edit?usp=sharing";
                 setSheetUrl(urlToUse);
                 if (savedSync) setLastSync(savedSync);
                 
